@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/notebook_paper"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Background -->
+    <ImageView
+        android:id="@+id/noteBackground"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/notebook_paper" />
+
+    <!-- Lock Icon -->
+    <ImageView
+        android:id="@+id/lockIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/lock_icon"
+        android:visibility="gone" />
+
+    <!-- Note Title -->
+    <TextView
+        android:id="@+id/noteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Note Title"
+        android:textColor="@color/notebud_purple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
